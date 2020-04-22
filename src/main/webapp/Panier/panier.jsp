@@ -104,6 +104,7 @@
                         
                         <td><c:out value="${row.quantite}"/></td>
                         
+                        <c:set var="id" value="${row.id_client}"/>
                         <c:set var="quantite" value="${row.quantite}"/>
                         <c:set var="prix_totale_unitaire" value="${prix_unitaire * quantite}"/>
                         <c:set var="prix_total" value="${prix_total + prix_totale_unitaire}"/>
@@ -124,6 +125,15 @@
                     <div class="col-md-12">
                         <h3>Prix Total de tous les produits : <c:out value="${prix_total}"/></h3>
                     </div>
+                </div>
+
+                <!-- button checkout -->
+                <div>
+					<form action="checkout.jsp" method="post">
+                		<input type="hidden" value="${id}" name="idClient"> <!-- Récupération de l'id cient -->
+                		<input type="hidden" value="${prix_total}" name="prixTotal"> <!-- Récupération du prix total -->
+                		<input class="col-md-12 btn btn-success" type="submit" value="Checkout">
+                	</form>
                 </div>
                 
     </div>
