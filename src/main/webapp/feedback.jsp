@@ -48,7 +48,7 @@
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="FeedbackList.jsp">Feedback </a>
+          <a class="nav-link" href="feedback.jsp">Feedback </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us !</a>
@@ -102,7 +102,7 @@
         
         <form name="MyForm" action="insert.jsp" method="POST" class="form" role="form">
                          <p>
-                <a href="http://localhost:8080/Reviews/FeedbackList.jsp" target="_blank">Click here to see the opinion of other customers ..</a>
+                <a href="FeedbackList.jsp" target="_blank">Click here to see the opinion of other customers ..</a>
             </p>
                                 <div class="form-group row">
                                     <label class="col-lg-3 col-form-label form-control-label">First name</label>
