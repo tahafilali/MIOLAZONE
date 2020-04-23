@@ -68,7 +68,7 @@
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="FeedbackList.jsp">Feedback </a>
+          <a class="nav-link" href="feedback.jsp">Feedback </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us !</a>
