@@ -11,7 +11,7 @@
     </head>
     <body>
             <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
-                           url="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2334884"
+                        url="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2334884"
                            user="sql2334884"  password="nT9*uE7%"/>
         <sql:query dataSource="${dbsource}" var="result">
             SELECT * from produit where id=?
@@ -57,7 +57,10 @@
                                  <label>Quantité</label>
                                  <input class="form-control" type="text" value="${row.quantité}" name="quantite"/>
                         </div>
-                       
+                       <div class="form-group">
+                                 <label>Prix</label>
+                                 <input class="form-control" type="text" value="${row.prix}" name="prix"/>
+                        </div>
                    
                 </c:forEach>
               <div class="form-group">

@@ -15,10 +15,11 @@
                            user="sql2334884"  password="nT9*uE7%"/>
         <c:set var="idd" value="${param.id}"/>
         <sql:update dataSource="${dbsource}" var="count">
-            UPDATE produit SET nom=?, quantité=?
+            UPDATE produit SET nom=?, quantité=? , prix=?
             WHERE id= ${param.id}
             <sql:param value="${param.nom}" />
             <sql:param value="${param.quantite}" />
+            <sql:param value="${param.prix}" />
         </sql:update>
         <c:if test="${count>=1}">
             <font size="5" color='green'> Congratulations ! Data updated

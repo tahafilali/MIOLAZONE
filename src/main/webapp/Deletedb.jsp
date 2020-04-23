@@ -11,7 +11,10 @@
         <body>
                         <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
                            url="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2334884"
-                           user="sql2334884"  password="nT9*uE7%"/>            
+                           user="sql2334884"  password="nT9*uE7%"/>             
+        <sql:update dataSource="${dbsource}" var="count">
+            delete from ligne_commande where id_produit=${param.id}
+        </sql:update>
         <sql:update dataSource="${dbsource}" var="count">
             delete from produit where id=${param.id}
         </sql:update>

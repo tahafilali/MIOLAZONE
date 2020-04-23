@@ -11,7 +11,7 @@
     </head>
     <body>
             <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
-                           url="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2334884"
+                        url="jdbc:mysql://sql2.freemysqlhosting.net:3306/sql2334884"
                            user="sql2334884"  password="nT9*uE7%"/>
         <sql:query dataSource="${dbsource}" var="result">
             SELECT * from categorie where id=?
