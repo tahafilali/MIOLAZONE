@@ -34,7 +34,7 @@
         <br><br><br><br>
         <div class="bg-light border rounded mx-5 my-3 p-3" style="box-shadow: 2px 4px 6px #00000099; width: 70%;">
             <h4 class="card-title mb-3 pb-2 pl-3 border-bottom">Chercher un Produit</h4>
-            <form class="form-inline" action="Affichage.jsp" name="myForm"  onsubmit="return validateForm()" method="post" required>
+            <form class="form-inline" action="Affichage1.jsp" name="myForm"  onsubmit="return validateForm()" method="post" required>
                 <div class="form-group mb-2 mr-5">
                     <label for="name" class="mr-4" class="sr-only" >Veuillez saisir le Nom de Produit: </label>
                     <input type="text" class="form-control" name="nom"/>

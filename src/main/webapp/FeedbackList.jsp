@@ -68,7 +68,7 @@
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:8080/Reviews/feedback.jsp">Feedback </a>
+          <a class="nav-link" href="FeedbackList.jsp">Feedback </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us !</a>
