@@ -5,6 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <html>
 	<head>
+	   <link rel="stylesheet" type="text/css" href="styles.css" />
     	<title>Résultat catégorie</title>
 	</head>
 	<body>
@@ -15,6 +16,8 @@
                   SELECT nom,prix from produit where id_categorie=${param.select}
            </sql:query>
 	<center>
+	<br><br><br>
+	<br><br><br>
     	<form>
         	<table border="1" width="40%">
             	<caption>Liste des Produits</caption>
